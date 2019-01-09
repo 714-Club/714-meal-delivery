@@ -1,2 +1,2 @@
 # 714-meal-delivery
-A simple takeaway meal delivery website
+基于javaWeb 的简单送餐系统实例
