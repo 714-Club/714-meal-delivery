@@ -1,0 +1,179 @@
+.m-navbar-show{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav.m-navbar-show:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand>img{
+    height: 100%;
+}
+
+.navbar-nav > li > a.m-a-active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.navbar-nav > li > a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.form-group .input-group .form-control{
+    border-top-left-radius: 99px;
+    border-bottom-left-radius: 99px;
+    border: 0px;
+}
+
+.form-group .input-group .input-group-btn button { 
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+    border: 0px;
+    font-size: 15.5px;
+}
+
+.content {
+    background: url(/foodweb/static/images/web/背景形状2.png) repeat;
+    background-position: center top;
+    
+}
+
+.content .content-top {
+    background: url(/foodweb/static/images/web/图3.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 330px;
+}
+
+.content .content-info {
+    background-color: white;
+    min-height: 700px;
+    padding-top: 60px;
+}
+
+.content .content-info .content-info-left>div>ul {
+    padding: 0px;
+}
+
+.content .content-info .content-info-left>div>ul>li {
+    list-style: none;
+}
+
+.content .content-info .content-info-left>div>ul>li>a {
+    text-align: left;
+    padding: 12px 6px 12px 0px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: none;
+}
+
+.content .content-info .content-info-left>div>ul>li>a:hover {
+    color: tomato;
+}
+
+.content .content-info .content-info-left>div>ul>li>a.m-active {
+    color: tomato;
+}
+
+#m-data button,#m-address .m-address-item button,#m-address>button {
+    background: transparent;
+    border: 0px;
+    padding: 6px;
+    outline: none;
+}
+
+#m-data label,#m-address label {
+    font-weight: normal;
+    color: gray;
+    text-align: left;
+    padding-top: 7px;
+}
+
+#m-data .m-input-normal {
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    box-shadow: none; 
+}
+
+#m-address .m-address-item {
+    color: gray;
+    margin-bottom: 10px;
+} 
+
+#m-address .m-address-item>span {
+    padding: 0px 5px;
+}
+
+#m-address .m-address-item>span:nth-of-type(1) {
+    font-weight: bold;
+}
+
+#m-address .m-address-item>form {
+    margin-top: 10px;
+    padding: 0px;
+}
+
+#m-order>div>div>img {
+    width: 145px;
+    height: 110px;
+}
+
+#m-order .m-order-right>span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#m-order .m-order-right>p:nth-of-type(1) {
+    color: gray;
+}
+
+#m-order .m-order-right>p:nth-of-type(2) {
+    font-size: 16px;    
+}
+
+#m-order .m-order-right .m-order-details-btn {
+    background: transparent;
+    border: 0px;
+    padding: 6px;
+    outline: none;
+}
+
+#m-order .m-order-right .m-order-active {
+    color: red;
+}
+
+#m-order .m-order-right>div>table {
+    width: 100%;
+}
+
+#m-order .m-order-right .m-text-right{
+    text-align: right;
+}
+
+#fade{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1050;
+	display: none;
+}
+#fade .popup{
+	width:23%;
+	min-height:480px;
+	min-width: 480px;
+	background-color: #FFF;
+	margin:75px auto;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+	border-radius: 10px;
+	padding-left:15px;
+}
+#fade .popup .row{
+	margin-top:10px;
+}

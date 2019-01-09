@@ -1,0 +1,291 @@
+.m-navbar-show{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav.m-navbar-show:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand>img{
+    height: 100%;
+}
+
+.navbar-nav > li > a.m-a-active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.navbar-nav > li > a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.form-group .input-group .form-control{
+    border-top-left-radius: 99px;
+    border-bottom-left-radius: 99px;
+    border: 0px;
+}
+
+.form-group .input-group .input-group-btn button { 
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+    border: 0px;
+    font-size: 15.5px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.content .content-top{
+    height: 891px;
+    background: url(/foodweb/static/images/web/图1.png) no-repeat; 
+    background-size: cover;
+    background-position: center top;
+}
+
+.content-top .container .row{
+    color: white;
+    margin-top: 300px;
+}
+
+.content-top .container .row>div>h1{
+    font-size: 42px;
+    text-align: center;
+}
+
+.content-top .container .row>div:nth-child(1) {
+    text-align: center;
+}
+
+.content-top .container .row>div>h2 {
+    text-align: center;
+}
+
+.content-top .container .row>div>div>a button {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 10px 60px;
+    background-color: rgb(248, 151, 61);
+    border-radius: 99px;
+    line-height: 2.2;
+    font-size: 16px;
+}
+
+.content-top .container .row>div>div>a button:hover {
+    color: white;
+}
+
+.content-top .container .row>div>div p {
+    font-size: 12px;
+}
+
+.content-foodlist{
+    margin-top: -60px;
+    padding-top: 30px;
+    background: url(/foodweb/static/images/web/背景形状2.png) repeat;
+    background-size: auto auto;
+    background-position: center top;
+}
+
+.content-foodlist .container>h2{
+    color: white;
+}
+
+.content-foodlist .container>ul{
+    padding: 0px;
+}
+
+.content-foodlist .container>ul>li>div.food{
+    margin-top: 30px;
+    color: azure;
+    position: relative;
+    border-bottom: 1px solid #c6c6c6;
+    width: 300px;
+}
+
+.content-foodlist .container>ul>li div.food>a>img:nth-child(1) {
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+
+.content-foodlist .container>ul>li div.food>a>img:nth-child(2) {
+    position: absolute;
+    right:10px;
+    top:170px;
+}
+
+.content-foodlist .container>ul>li>div.food .food-price{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+}
+
+.content-foodlist .container>ul>li>div.food div.food-price>span{ 
+    color: tomato;
+    line-height: 27px;
+    font-size: 20px;
+}
+
+.content-bottom {
+    background: url(/foodweb/static/images/web/背景形状3.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 204px;
+}
+
+.footer{
+    background: url(../images/web/图2.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin-top: -300px;
+    padding-top: 350px;
+    padding-bottom: 45px;
+}
+.footer>div>ul {
+    padding: 25px 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    list-style: none;
+}
+.footer>div>ul>li>h5 {
+    font-weight: 800;
+    color: rgb(85, 79, 79);
+}
+.footer>div>ul>li>p {
+    font-size: 13px;
+}
+
+.shopping-cart{
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    width: 100%;
+    color: white;
+}
+
+.shopping-cart .container {
+    background-color: rgb(248, 151, 61);
+    padding: 0px;
+    position: relative;
+}
+
+.shopping-cart .container>a>img {
+    position: absolute;
+    left: 5%;
+    top: -45%;
+    width: 57px;
+}
+
+.shopping-cart .container>span {
+    position: relative;
+    left: 15%;
+    font-size: 26px;
+    line-height: 57px;
+}
+
+.shopping-cart .container>button {
+    font-size: 26px;
+    border-radius: 0px;
+    padding: 9px 45px;
+    background-color: rgb(252, 171, 96);
+}
+
+/* 超小屏幕（手机，小于 768px） */
+@media screen and (max-width: 767px) {
+    .content-foodlist .container>ul>li>div.food {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .shopping-cart .container>a>img {
+        width: 49px;
+    }
+    
+    .shopping-cart .container>span {
+        left: 15%;
+        font-size: 22px;
+        line-height: 49px;
+    }
+    
+    .shopping-cart .container>button {
+        font-size: 22px;       
+        padding: 8px 35px;
+    }
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .content-top .container .row>div>h1 {
+        float: right;
+    }
+
+    .content-top .container .row>div>h2 {
+        float: right;
+    }
+
+    .content-top .container .row>div>div:nth-last-child(1) {
+        float: right;
+    }
+
+    .shopping-cart .container>a>img {
+        width: 52px;
+    }
+    
+    .shopping-cart .container>span {
+        left: 15%;
+        font-size: 24px;
+        line-height: 52px;
+    }
+    
+    .shopping-cart .container>button {
+        font-size: 24px;       
+        padding: 9px 40px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media screen and (min-width: 992px) { 
+    .content-top .container .row>div>h1 {
+        float: right;
+    }
+
+    .content-top .container .row>div>h2 {
+        float: right;
+    }
+
+    .content-top .container .row>div>div:nth-last-child(1) {
+        float: right;
+    }
+}
+#fade{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1050;
+	display: none;
+}
+#fade .popup{
+	width:15%;
+	min-height:300px;
+	min-width: 350px;
+	background-color: #FFF;
+	margin:90px auto;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+	border-radius: 10px;
+	padding-left:15px;
+}
+#fade .popup .row{
+	margin-top:10px;
+}
+#fade .row{
+    width:95%;
+}

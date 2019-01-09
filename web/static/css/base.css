@@ -1,0 +1,19 @@
+#fade .code img{
+    width: 100%;
+   height: 60px;
+}
+#fade .code-btn{
+    margin-top:25px;
+}
+#fade .btn-box{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#fade .btn-box button{
+    width:80%;
+}
+.error{
+    background: rgba(255,255,255, 0.8);
+    box-shadow: 0 0 10px #FF4500 !important;
+}

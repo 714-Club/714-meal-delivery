@@ -1,0 +1,542 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商店信息中心</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/storeInfo.css">
+
+</head>
+
+<body>
+    <!-- 导航栏开始 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top m-navbar-show">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./static/images/web/LOGO.png" alt="LOGO"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group m-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span>&thinsp;</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="m-a-active" href="#">首页</a></li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">地区</a></li>
+                    <li><a href="#">语言</a></li>
+                    <li><a href="#" id="nav-username">登录</a></li>
+                    <li><a href="#" id="nav-register">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+    <!-- 导航栏结束 -->
+    <!-- 正文开始 -->
+    <div class="content">
+       <div class="content-top"></div>
+       <!-- 个人信息开始 -->
+       <div class="content-info container">
+           <!-- 左边导航栏开始 -->
+            <div class="content-info-left col-md-4">
+                <div class="col-md-9 col-md-offset-3">
+                    <h2>商店个人中心</h2>
+                    <ul>
+                        <li>
+                            <a class="btn btn-block m-active">
+                                <img src="./static/images/web/Shape101.png" alt="导航项">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基本资料
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-block" href="javascript:void(0);">
+                                <img src="./static/images/web/Shape101.png" alt="导航项">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商店商品
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-block" href="javascript:void(0);">
+                                <img src="./static/images/web/Shape101.png" alt="导航项">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商店订单
+                            </a>
+                        </li>
+                    </ul>
+                </div>               
+            </div>
+            <!-- 左边导航栏结束 -->
+            <!-- 右边内容开始 -->
+            <div class="content-info-right col-md-8">                
+                <!-- 基本资料开始 -->
+                <div id="m-data">
+                    <h2>基本资料</h2><br><br>
+                    <a href="#"><img src="./static/images/web/肉.png" alt=""></a><br><br>
+                    <button><img src="./static/images//web/设置头像.png" alt="设置头像"></button><br><br><br>
+                    <div class="form-horizontal col-sm-10">
+                        <div class="form-group">
+                            <label for="m-data-username" class="col-sm-2 control-label">店名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control m-input-normal" id="m-data-username" placeholder="请输入用户名" readonly="readonly">
+                            </div>
+                            <div class="col-sm-2 hidden">
+                                <button class="m-data-modify"><img src="./static/images/web/修改.png" alt="修改"></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="m-data-phone" class="col-sm-2">联系手机&nbsp;:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control m-input-normal" id="m-data-phone" placeholder="请输入手机号" readonly="readonly">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="m-data-modify"><img src="./static/images/web/修改.png" alt="修改"></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="m-data-email" class="col-sm-2">联系邮箱&nbsp;:</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control m-input-normal" id="m-data-email" placeholder="请输入邮箱地址" readonly="readonly">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="m-data-modify"><img src="./static/images/web/修改.png" alt="修改"></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="m-data-loginpassword" class="col-sm-2">登录密码&nbsp;:</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control m-input-normal" id="m-data-loginpassword" placeholder="请输入登录密码" readonly="readonly">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="m-data-modify"><img src="./static/images/web/修改.png" alt="修改"></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="m-data-address" class="col-sm-2">商店地址&nbsp;:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control m-input-normal" id="m-data-address" placeholder="请输入商店地址" readonly="readonly">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="m-data-modify"><img src="./static/images/web/修改.png" alt="修改"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 基本资料结束 -->
+                <!-- 商店商品开始 -->
+                <div id="m-goods">
+                    <h2>商店商品</h2><br><br>                    
+                    <div class="col-sm-10 m-add-goods">
+                        <!-- <button><img src="./static/images/web/新增商品.png" alt="新增商品"></button><br><br><br> -->
+                        <button class="btn m-add-goods-btn">新增商品</button><br><br><br>
+                        <div class="m-goods-list-form">
+                            <div class="col-sm-4">
+                                <div class="m-goods-bg-image">
+                                    <a><div></div></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="m-goods-name" class="col-sm-2 control-label">菜名</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="m-goods-name" placeholder="这道菜的名字">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="m-goods-type" class="col-sm-2 control-label">分类</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="m-goods-type">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="m-goods-price" class="col-sm-2 control-label">价格</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">￥</span>
+                                                <input type="number" class="form-control" id="m-goods-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="m-goods-discount" class="col-sm-2 control-label">优惠</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="m-goods-discount">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button class="btn m-goods-add-discount-btn">增添优惠</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn m-goods-save-btn">保存信息</button>
+                                            <button class="btn m-goods-close-btn">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div><hr>
+                    </div>
+                    <div class="col-sm-10 m-goods-list">
+                        <div class="row">
+                            <div class="m-goods-list-left col-sm-4">
+                                <img src="./static/images/android/drawable-xhdpi/taylor-grote-327183-unsplash.png" alt="菜图">
+                            </div>
+                            <div class="m-goods-list-right col-sm-8">
+                                <div class="pull-right">
+                                    <button class="btn m-goods-list-modify"><img src="./static/images/web/修改.png" alt="修改"></button><br>
+                                    <button class="btn m-goods-list-delete"><img src="./static/images/web/删除.png" alt="删除"></button>
+                                </div>
+                                <p class="pull-left">这道菜的名称</p><div class="clearfix"></div>
+                                <p class="pull-left">分类</p><div class="clearfix"></div>
+                                <p class="pull-left">价格</p><div class="clearfix"></div>
+                                <p class="pull-left">优惠情况</p><div class="clearfix"></div>    
+                            </div>
+                            <div class="m-goods-list-form">
+                                <div class="col-sm-4">
+                                    <div class="m-goods-bg-image">
+                                        <a><div></div></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="m-goods-name" class="col-sm-2 control-label">菜名</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="m-goods-name" placeholder="这道菜的名字">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="m-goods-type" class="col-sm-2 control-label">分类</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" id="m-goods-type">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="m-goods-price" class="col-sm-2 control-label">价格</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">￥</span>
+                                                    <input type="number" class="form-control" id="m-goods-price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="m-goods-discount" class="col-sm-2 control-label">优惠</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="m-goods-discount">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button class="btn m-goods-add-discount-btn">增添优惠</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn m-goods-save-btn">保存信息</button>
+                                                <button class="btn m-goods-close-btn">取消</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><hr>
+                        <div class="row">
+                            <div class="m-goods-list-left col-sm-4">
+                                <img src="./static/images/android/drawable-xhdpi/taylor-grote-327183-unsplash.png" alt="菜图">
+                            </div>
+                            <div class="m-goods-list-right col-sm-8">
+                                <div class="pull-right">
+                                    <button class="btn m-goods-list-modify"><img src="./static/images/web/修改.png" alt="修改"></button><br>
+                                    <button class="btn m-goods-list-delete"><img src="./static/images/web/删除.png" alt="删除"></button>
+                                </div>
+                                <p class="pull-left">这道菜的名称</p><div class="clearfix"></div>
+                                <p class="pull-left">分类</p><div class="clearfix"></div>
+                                <p class="pull-left">价格</p><div class="clearfix"></div>
+                                <p class="pull-left">优惠情况</p><div class="clearfix"></div>    
+                            </div>
+                            <div class="m-goods-list-form">
+                                <div class="col-sm-4">
+                                    <div class="m-goods-bg-image">
+                                        <a><div></div></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="m-goods-name" class="col-sm-2 control-label">菜名</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="m-goods-name" placeholder="这道菜的名字">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="m-goods-type" class="col-sm-2 control-label">分类</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" id="m-goods-type">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="m-goods-price" class="col-sm-2 control-label">价格</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">￥</span>
+                                                    <input type="number" class="form-control" id="m-goods-price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="m-goods-discount" class="col-sm-2 control-label">优惠</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="m-goods-discount">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button class="btn m-goods-add-discount-btn">增添优惠</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn m-goods-save-btn">保存信息</button>
+                                                <button class="btn m-goods-close-btn">取消</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><hr>                        
+                    </div>
+                </div>
+                <!-- 商店商品结束 -->
+                <!-- 商店订单开始 -->
+                <div id="m-order">
+                    <h2>商店订单</h2><br><br>
+                    <div class="col-md-10">
+                        <div class="m-order-right">
+                            <span class="pull-left">下单用户名</span>
+                            <button class="pull-right m-order-details-btn">
+                                <img src="./static/images/web/详情.png" alt="详情">
+                            </button>
+                            <div class="clearfix"></div>
+                            <p class="pull-left">2018 11-26    12:24</p>
+                            <div class="clearfix"></div>
+                            <p class="m-order-active">订单尚未送达</p>
+                            <p class="pull-left">椒盐鸡扒等3样商品</p>
+                            <p class="pull-right">￥23</p>
+                            <div class="clearfix"></div>
+                            <div class="m-order-details">
+                                <table>
+                                    <tr>
+                                        <td>椒盐鸡扒</td>
+                                        <td class="m-text-right">x1</td>
+                                        <td class="m-text-right">￥5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>椒盐鸡扒</td>
+                                        <td class="m-text-right">x1</td>
+                                        <td class="m-text-right">￥5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>椒盐鸡扒</td>
+                                        <td class="m-text-right">x1</td>
+                                        <td class="m-text-right">￥5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>优惠</td>
+                                        <td>&nbsp;</td>
+                                        <td class="m-order-active m-text-right">-￥2</td>
+                                    </tr>
+                                    <tr class="m-order-total">
+                                        <td>合计</td>
+                                        <td>&nbsp;</td>
+                                        <td class="m-order-active m-text-right">￥23</td>
+                                    </tr>                                    
+                                </table>
+                                <p class="pull-left">订单号：000</p>
+                                <div class="clearfix"></div>
+                                <p class="pull-left">下单时间：2018-11-26 12:56</p>
+                                <div class="clearfix"></div>
+                            </div><hr>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="m-order-right">
+                            <span class="pull-left">下单用户名</span>
+                            <button class="pull-right m-order-details-btn">
+                                <img src="./static/images/web/详情.png" alt="详情">
+                            </button>
+                            <div class="clearfix"></div>
+                            <p class="pull-left">2018 11-26    12:24</p>
+                            <div class="clearfix"></div>
+                            <p class="m-order-active">订单尚未送达</p>
+                            <p class="pull-left">椒盐鸡扒等3样商品</p>
+                            <p class="pull-right">￥23</p>
+                            <div class="clearfix"></div>
+                            <div class="m-order-details">
+                                <table>
+                                    <tr>
+                                        <td>椒盐鸡扒</td>
+                                        <td class="m-text-right">x1</td>
+                                        <td class="m-text-right">￥5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>椒盐鸡扒</td>
+                                        <td class="m-text-right">x1</td>
+                                        <td class="m-text-right">￥5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>椒盐鸡扒</td>
+                                        <td class="m-text-right">x1</td>
+                                        <td class="m-text-right">￥5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>优惠</td>
+                                        <td>&nbsp;</td>
+                                        <td class="m-order-active m-text-right">-￥2</td>
+                                    </tr>
+                                    <tr class="m-order-total">
+                                        <td>合计</td>
+                                        <td>&nbsp;</td>
+                                        <td class="m-order-active m-text-right">￥23</td>
+                                    </tr>                                   
+                                </table>
+                                <p class="pull-left">订单号：000</p>
+                                <div class="clearfix"></div>
+                                <p class="pull-left">下单时间：2018-11-26 12:56</p>
+                                <div class="clearfix"></div>                                
+                            </div><hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商店订单结束 -->
+            </div>
+            <!-- 右边内容结束 -->
+       </div>
+       <!-- 个人信息结束 -->
+    </div>
+    <!-- 正文结束 -->
+
+   <!-- 弹出层 -->
+<div id="fade">
+    <div class="popup popup-login">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="h3">登录界面</div>
+        </div>
+        <div class="row">
+          <div class="form-group username">
+            <label for="input-username">用户名</label>
+            <input type="text" class="form-control" id="input-username" placeholder="请输入用户名或者邮箱">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group password">
+            <label for="input-password">密码</label>
+            <input type="password" class="form-control" id="input-password" placeholder="请输入密码">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group code">
+                          <span class="col-xs-5">
+                              <label for="input-code">验证码</label>
+                              <input type="text" class="form-control" id="input-code" placeholder="验证码">
+                          </span>
+            <span class="col-xs-6 col-xs-offset-1">
+                              <img src="/foodweb/verify/i?action=getCode" alt="图片加载不出" title="点击更换验证码" id="image-code">
+                          </span>
+          </div>
+        </div>
+        <div class="row btn-box">
+          <button class="btn btn-primary submit-login">登录</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="popup popup-register">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="h3">注册界面</div>
+        </div>
+        <div class="row">
+          <div class="form-group username">
+            <label for="register-username">用户名</label>
+            <input type="text" class="form-control" id="register-username" placeholder="请输入用户名">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group password">
+            <label for="register-passowrd">密码</label>
+            <input type="password" class="form-control" id="register-passowrd" placeholder="请输入密码">
+            <input type="password" class="form-control" id="register-repassowrd" placeholder="请重新输入密码">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group username">
+            <label for="register-email">邮箱</label>
+            <input type="text" class="form-control" id="register-email" placeholder="请输入邮箱">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group code">
+                          <span class="col-xs-5">
+                              <label for="register-code">验证码</label>
+                              <input type="text" class="form-control" id="register-code" placeholder="验证码">
+                          </span>
+            <span class="col-xs-3 col-xs-offset-1">
+                              <button class="btn btn-primary code-btn" id="btn-sendMail">获取验证码</button>
+                          </span>
+          </div>
+        </div>
+        <div class="row btn-box">
+          <button class="btn btn-primary submit-register">注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 弹出层 -->
+
+
+
+    <!-- js -->
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/bootstrap.js"></script>
+    <script src="./static/js/FeedingNet.js"></script>
+    <script src="./static/js/storeInfo.js"></script>
+</body>
+
+</html>

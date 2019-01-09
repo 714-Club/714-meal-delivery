@@ -1,0 +1,139 @@
+.m-navbar-show{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav.m-navbar-show:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand>img{
+    height: 100%;
+}
+
+.navbar-nav > li > a.m-a-active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.navbar-nav > li > a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.form-group .input-group .form-control{
+    border-top-left-radius: 99px;
+    border-bottom-left-radius: 99px;
+    border: 0px;
+}
+
+.form-group .input-group .input-group-btn button { 
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+    border: 0px;
+    font-size: 15.5px;
+}
+
+.content {
+    background: url(../images/web/背景形状2.png) repeat;
+    background-position: center top;
+    background-size: auto auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-foodlist .container>ul{
+    padding: 0px;
+}
+
+.content-foodlist .container>ul>li>div.food{
+    margin: 20px auto;
+    color: azure;
+    position: relative;
+    border-bottom: 1px solid #c6c6c6;
+    width: 300px;
+}
+
+.content-foodlist .container>ul>li div.food>a>img:nth-child(1) {
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+
+.content-foodlist .container>ul>li div.food>a>img:nth-child(2) {
+    position: absolute;
+    right:10px;
+    top:170px;
+}
+
+.content-foodlist .container>ul>li div.food>div.food-info {
+    padding: 15px 0px;
+    height: 62px;
+    position: relative;
+}
+
+.content-foodlist .container>ul>li div.food>div.food-info>span:nth-of-type(1) {
+    font-size: 22px;
+}
+
+.content-foodlist .container>ul>li div.food>div.food-info>span:nth-of-type(2) {
+    font-size: 13px;
+    color: #c6c6c6;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+.shopping-cart{
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    width: 100%;
+    color: white;
+}
+
+.shopping-cart .container {
+    background-color: rgb(248, 151, 61);
+    padding: 0px;
+    position: relative;
+}
+
+.shopping-cart .container>a>img {
+    position: absolute;
+    left: 5%;
+    top: -45%;
+    width: 57px;
+}
+
+.shopping-cart .container>span {
+    position: relative;
+    left: 15%;
+    font-size: 26px;
+    line-height: 57px;
+}
+
+.shopping-cart .container>button {
+    font-size: 26px;
+    border-radius: 0px;
+    padding: 9px 45px;
+    background-color: rgb(252, 171, 96);
+}
+
+.back-to-top {
+    position: fixed;
+    right: 80px;
+    bottom: 30px;
+    z-index: 10;    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.back-to-top>a {
+    font-size: 31px;
+    color: #c6c6c6;
+    width: 55px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px;   
+}
